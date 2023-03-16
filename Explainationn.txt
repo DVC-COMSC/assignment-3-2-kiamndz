@@ -1,0 +1,20 @@
+Input 
+  * Email
+Output
+  * True or  False
+Explaination
+  This code prompts the user to enter an email address as input using the input() function and assigns it to a variable named email.
+
+  The code then sets a boolean variable flag to True, which will be used to determine if the input string is a valid email address.
+
+  The code then performs several checks on the input string.
+
+  First, it checks if the first character of the input string is an alphabet character using the isalpha() method. If it is not, it sets flag to False.
+
+  Next, it checks the length of the input string. If the length is less than or equal to 5, or greater than or equal to 30, it sets flag to False.
+
+  Then, it checks if the input string contains the "@" symbol by using the find() method to search for the "@" symbol. If the symbol is not found, it sets flag to False.
+
+  Finally, if the "@" symbol is found, it checks if there is a "." after the "@" symbol by searching for it using find() and checking if the index returned is not -1. If there is no ".", it sets flag to False.
+
+  The code then prints the value of the flag variable, which will be True if all the checks pass and False if any of them fail. This is done to indicate whether the input string is a valid email address or not.
